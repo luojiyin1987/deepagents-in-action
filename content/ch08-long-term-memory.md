@@ -12,6 +12,8 @@ Deep Agents 将记忆作为**一等公民**——Agent 以文件形式读写记�
 
 最常见的两种模式：**Agent 级记忆**（所有用户共享）和**用户级记忆**（按用户隔离）。
 
+> 通过 `skills=` 传入的程序性记忆（Skills），其机制详解——Progressive Disclosure 三级加载、三种存储后端、子 Agent 继承规则，详见[第 7 章：Skills](/chapters/ch07-skills)。
+
 ## Agent 的两种"记忆"
 
 人类有短期记忆和长期记忆——你记得今天的对话内容（短期），也记得你的名字和偏好（长期）。Agent 也一样，但需要不同的技术来实现。
@@ -424,8 +426,6 @@ Agent 启动时加载所有研究文件，每次对话结束后更新进度。�
 | **更新策略** | 何时写入？ | 对话中（默认）/ 对话间（后台整合） |
 | **检索方式** | 如何读取？ | 启动加载（memory=）/ 按需读取（Skills） |
 | **权限控制** | Agent 能写吗？ | 读写（默认）/ 只读（共享策略） |
-
-> 程序性记忆（Skills）的实现机制——Progressive Disclosure 三级加载、三种存储后端、子 Agent 继承规则，详见[第 7 章：Skills](/chapters/ch07-skills)。
 
 ### 组织级记忆（Organization-level）
 
