@@ -687,6 +687,8 @@ Skills、Memory（`AGENTS.md`）和 Tools 是 Deep Agents 中三种不同的能�
 
 值得注意的是，Skills 和 Memory 处于一个**连续光谱**上。Agent 可以在工作过程中更新自己的 Skills（就像更新记忆一样），因此 Skills 也可以充当**渐进式披露的记忆**——只在需要时才加载的领域知识库。
 
+> Memory 的详细用法（跨会话持久化、Store 升级路径、读写权限控制），详见[第 8 章：长期记忆](/chapters/ch08-long-term-memory)。
+
 ## 编写高效 Skills 的最佳实践
 
 根据 Agent Skills 规范和实践经验，以下是编写高质量 Skills 的指南：

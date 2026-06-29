@@ -425,6 +425,8 @@ Agent 启动时加载所有研究文件，每次对话结束后更新进度。�
 | **检索方式** | 如何读取？ | 启动加载（memory=）/ 按需读取（Skills） |
 | **权限控制** | Agent 能写吗？ | 读写（默认）/ 只读（共享策略） |
 
+> 程序性记忆（Skills）的实现机制——Progressive Disclosure 三级加载、三种存储后端、子 Agent 继承规则，详见[第 7 章：Skills](/chapters/ch07-skills)。
+
 ### 组织级记忆（Organization-level）
 
 组织级记忆跨所有用户和 Agent 共享，通常设为**只读**以防止注入攻击：
